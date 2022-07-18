@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Card, CardTitle, CardSubtitle, CardBody, CardText } from "reactstrap";
+import { getBikeById } from "../bikeManager";
 
 export default function BikeDetails({detailsBikeId}) {
     const [bike, setBike] = useState(null)
 
     const getBikeDetails = (id) => {
-        //implement functionality here...
+        getBikeById(id).then(data => setBike(data))
     } 
 
     useEffect(() => {

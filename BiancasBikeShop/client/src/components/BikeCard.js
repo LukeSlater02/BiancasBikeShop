@@ -1,4 +1,5 @@
 import {Card, CardBody, CardTitle, CardText, CardSubtitle, Button} from 'reactstrap';
+import BikeDetails from './BikeDetails';
 
 export default function BikeCard({bike, setDetailsBikeId}) {
     return (
@@ -21,7 +22,8 @@ export default function BikeCard({bike, setDetailsBikeId}) {
                     Color: {bike.color}
                 </CardText>
                 <Button color="dark" onClick={() => { 
-                    setDetailsBikeId(bike.id); 
+                    setDetailsBikeId(bike.id);
+                    <BikeDetails />
                     window.scrollTo({
                                 top: 0,
                                 left: 0,

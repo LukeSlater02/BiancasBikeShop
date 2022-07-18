@@ -1,6 +1,6 @@
 {
   "name": "biancas-bike-shop-client",
-  "proxy": "https://localhost:5001",
+  "proxy": "https://localhost:44315",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
